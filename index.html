@@ -1,0 +1,54 @@
+<!--
+      \    /\
+       )  ( ')
+      (  /  )    meow
+       \(__)|
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Valkyrie</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $.getJSON("https://ipapi.co/json/", function (data) {
+                $("#result").html("Welcome back, <span style='color: rgb(0, 255, 0); font-style: Monospace;'>" + data.ip + "</span>. By the way, nice to see someone from " + data.country_name + " here!");
+            })
+        });
+    </script>
+</head>
+<body>
+<!--[if IE]>
+  <script src="./oneko-ie6.js"></script>
+<![endif]-->
+<!--[if !IE]><!-->
+    <script src="./oneko.js"></script>
+<!--<![endif]-->
+
+<div class="content-container">
+    <p id="result"></p>
+
+    <h1>Hi, I'm Valkyrie! :3</h1>
+
+    <hr>
+
+    <h1>About Me</h1>
+    <h2>Haii! im just your average kiddo on the internet who dose sum coding when hes bored. i code in python html css and lua. My pronouns are he/him or any you like.</h2>
+
+    <hr>
+
+    <h3 style="text-align: center;">"Oops, your files have been encrypted! :3", - me</h3>
+    <pre style="color: rgb(255, 0, 0); text-align: center;">
+01001001 01001100
+01001111 01010110
+01000101 01011001
+01001111 01010101
+    </pre>
+</div>
+</body>
+</html>
